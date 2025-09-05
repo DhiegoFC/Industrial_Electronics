@@ -112,6 +112,7 @@ The laboratory sessions follow the structure of the main Industrial Electronics 
 │   └── notes/         # Complementary notes or datasheets
 ├── images/            # Photos and figures for documentation
 └── README.md          # Course overview (this file)
+```
 
 ---
 
