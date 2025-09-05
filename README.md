@@ -105,7 +105,7 @@ The laboratory sessions follow the structure of the main Industrial Electronics 
 
 ---
 
-## 📂 Repository Structure
+📂 Repository Structure
 ├── lessons/           # Lessons separated by week or activity (Lab01.md, Lab02.md, etc.)
 │   ├── code/          # Arduino sketches for each lesson
 │   └── notes/         # Complementary notes or datasheets
