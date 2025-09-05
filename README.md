@@ -106,9 +106,9 @@ The laboratory sessions follow the structure of the main Industrial Electronics 
 ---
 
 ## 📂 Repository Structure
-├── lessons/ # lessons separates for each week or activity
-├── images/ # Photos and figures for documentation
-└── README.md # Course overview (this file)
+├── lessons/           # Lessons separated by week or activity 
+├── images/            # Photos and figures for documentation
+└── README.md          # Course overview (this file)
 
 ---
 
