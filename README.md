@@ -107,9 +107,28 @@ The laboratory sessions follow the structure of the main Industrial Electronics 
 
 ## 📂 Repository Structure
 ```plaintext
-├── lessons/           # Lessons separated by week or activity (Lab01.md, Lab02.md, etc.)
-│   ├── code/          # Arduino sketches for each lesson
-│   └── notes/         # Complementary notes or datasheets
+├── lessons/
+├── week01/
+│   ├── README.md       # Overview of Week 01 (Aula 1 - 2h, Aula 2 - 3h)
+│   ├── code/           # Arduino sketches used in week 01
+│   └── notes/          # Complementary notes/datasheets for week 01
+├── week02/
+│   ├── README.md       # Overview of Week 02
+│   ├── code/
+│   └── notes/
+├── week03/
+│   ├── README.md       # Overview of Week 03
+│   ├── code/
+│   └── notes/
+├── week04/
+│   ├── README.md       # Overview of Week 04
+│   ├── code/
+│   └── notes/
+├── week05/
+│   ├── README.md       # Overview of Week 05
+│   ├── code/
+│   └── notes/
+└── README.md           # General course overview
 ├── images/            # Photos and figures for documentation
 └── README.md          # Course overview (this file)
 ```
