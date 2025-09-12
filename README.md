@@ -1,4 +1,4 @@
-!![Department of Engineering and Applied Sciences - Dalmine](./images/unibg_dalmine.jpg)
+![Department of Engineering and Applied Sciences - Dalmine](./images/unibg_dalmine.jpg)
 
 # University of Bergamo (UNIBG)
 
@@ -25,11 +25,12 @@ The module focuses on the **practical use of microcontrollers (Arduino platform)
 ## 🎯 Learning Objectives
 By the end of this course, students will be able to:
 - Understand the structure and role of **microcontrollers** in industrial control systems.  
-- Identify and classify different types of **transducers** (light, temperature, motion).  
-- Use **signal conditioning circuits** (resistors, voltage dividers, amplifiers, logic gates).  
-- Implement control of **actuators** (LEDs, buzzers, speakers).  
-- Apply concepts of **feedback and closed-loop control** using Arduino-based prototypes.  
-- Relate theoretical concepts of **Industrial Electronics** with practical experiments.  
+- Explore the Arduino UNO kit and interface with **digital and analog I/O**.  
+- Work with **transducers and sensors** such as potentiometers, LDRs, and temperature sensors.  
+- Apply **signal conditioning techniques** (resistors, voltage dividers, simple amplifiers, logic gates).  
+- Implement and program **basic actuator control** (LEDs, buzzers, speakers).  
+- Develop **Arduino sketches** to read sensors and drive actuators.  
+- Demonstrate the principle of **closed-loop control** using microcontroller-based prototypes.  
 
 ---
 
@@ -37,8 +38,8 @@ By the end of this course, students will be able to:
 
 ### 📘 Week 01 – Introduction to Microcontrollers & Arduino Kit
 - **Slides:**  
-  Microcontrollers in Control Systems: 
-  [<img src="images/pdf_logo1.png" alt="PDF" width="23" height="23" />  Microcontrollers in Control Systems: ](lessons/week_01/week_01_IoT_LoRaWAN_Industrial_IoT_Dhiego.pdf)
+  Microcontrollers in Control Systems:  
+  [<img src="images/pdf_logo1.png" alt="PDF" width="23" height="23" /> Microcontrollers in Control Systems](lessons/week_01/week_01_IoT_LoRaWAN_Industrial_IoT_Dhiego.pdf)
 
 - **Hands-on:**  
   - Exploring the Arduino UNO (DFRduino R3) and the kit components.  
