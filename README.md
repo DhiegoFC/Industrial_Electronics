@@ -38,8 +38,7 @@ By the end of this course, students will be able to:
 
 ### 📘 Week 01 – Introduction to Microcontrollers & Arduino Kit
 - **Slides:**  
-  Microcontrollers in Control Systems:  
-  [<img src="images/pdf_logo1.png" alt="PDF" width="23" height="23" /> Microcontrollers in Control Systems](lessons/week_01/week_01_IoT_LoRaWAN_Industrial_IoT_Dhiego.pdf)
+  Microcontrollers in Control Systems:  [<img src="images/pdf_logo1.png" alt="PDF" width="23" height="23" /> Microcontrollers in Control Systems](lessons/week_01/week_01_IoT_LoRaWAN_Industrial_IoT_Dhiego.pdf)
 
 - **Hands-on:**  
   - Exploring the Arduino UNO (DFRduino R3) and the kit components.  
