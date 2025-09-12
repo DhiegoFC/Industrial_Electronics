@@ -37,7 +37,8 @@ By the end of this course, students will be able to:
 
 ### 📘 Week 01 – Introduction to Microcontrollers & Arduino Kit
 - **Slides:**  
-  Microcontrollers in Control Systems: architecture, GPIO, communication types (digital, analog, I²C, SPI, UART).  
+  Microcontrollers in Control Systems: 
+  [<img src="images/pdf_logo1.png" alt="PDF" width="23" height="23" />  Microcontrollers in Control Systems: ](lessons/week_01/week_01_IoT_LoRaWAN_Industrial_IoT_Dhiego.pdf)
 
 - **Hands-on:**  
   - Exploring the Arduino UNO (DFRduino R3) and the kit components.  
@@ -78,16 +79,16 @@ By the end of this course, students will be able to:
 ```plaintext
 ├── lessons/
 │   ├── week01/
-│   │   ├── README.md       # Overview of Week 01
-│   │   ├── code/           # Arduino sketches for week 01
-│   │   └── notes/          # Datasheets or additional material
+│   │   ├── README.md                # Overview of Week 01
+│   │   ├── lesson_images/           # Lesson images
+│   │   └── hands-on/                # Activities
 │   ├── week02/
 │   │   ├── README.md
-│   │   ├── code/
-│   │   └── notes/
+│   │   ├── lesson_images/
+│   │   └── hands-on/
 │   ├── week03/
 │   │   ├── README.md
-│   │   ├── code/
-│   │   └── notes/
-├── images/                 # Photos and figures for documentation
-└── README.md               # Course overview (this file)
+│   │   ├── lesson_images/
+│   │   └── hands-on/
+├── images/                         # Photos and figures for documentation
+└── README.md                       # Course overview (this file)
