@@ -16,12 +16,10 @@ The module focuses on the **practical use of microcontrollers (Arduino platform)
 Due to high enrollment (over 60 students), the class will be divided into **three laboratory groups**, each attending **2 hours per week** for **three consecutive weeks**.  
 All sessions are **fully practical** and will take place in the **Electronics Laboratory**.  
 
-- **Total duration:** 16 hours (distributed across all groups)  
+- **Total duration:** 18 hours (distributed across all groups)  
 - **Format:** 3 weeks, 2-hour sessions per group per week  
-- **Language:** English  
+- **Language:** English/Italian  
 - **Lab resources:** 10 Arduino kits available (2 students per kit, rotation between groups)  
-
-> ⚠️ In case of high attendance, laboratory groups will operate on a rotating schedule to ensure equal access to kits and workbenches.  
 
 ---
 
@@ -42,8 +40,7 @@ By the end of this course, students will be able to:
 ### 📘 Week 01 – Introduction & Basic Circuits (No Programming)
 **Objective:** Familiarization with the Arduino kit and understanding of basic components through breadboard experiments.  
 
-- **Slides:**  
-  [<img src="images/pdf_logo1.png" alt="PDF" width="23" height="23" /> Microcontrollers in Control Systems](lessons/week_01/week_01_Microcontrollori_Elettronica_Industriale_Dhiego.pdf)
+- **Slides:** [<img src="images/pdf_logo1.png" alt="PDF" width="23" height="23" /> Microcontrollers in Control Systems](lessons/week_01/week_01_Microcontrollori_Elettronica_Industriale_Dhiego.pdf)
 
 - **Hands-on:**  
   - Presentation of the Arduino Zero to Hero Kit and components overview.  
