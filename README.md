@@ -86,16 +86,19 @@ By the end of this course, students will be able to:
 ```plaintext
 ├── lessons/
 │   ├── week01/
-│   │   ├── README.md                # Overview of Week 01
-│   │   ├── lesson_images/           # Lesson images
-│   │   └── hands-on/                # Activities and Arduino sketches
+│   │   ├── sources/                 # Complete structure of Week 01 activities
+│   │   │   ├── README.md            # Description and instructions for Week 01 activities
+│   │   │   └── lesson_images/       # Circuit diagrams and figures
+│   │   └── week01_slides.pptx       # Presentation slides for the first session
 │   ├── week02/
-│   │   ├── README.md
-│   │   ├── lesson_images/
-│   │   └── hands-on/
+│   │   └── sources/
+│   │       ├── README.md            # Description and instructions for Week 02 activities
+│   │       ├── programs/            # Arduino sketches (.ino) for Week 02
+│   │       └── lesson_images/
 │   ├── week03/
-│   │   ├── README.md
-│   │   ├── lesson_images/
-│   │   └── hands-on/
-├── images/                         # Photos and figures for documentation
-└── README.md                       # Course overview (this file)
+│   │   └── sources/
+│   │       ├── README.md            # Description and instructions for Week 03 activities
+│   │       ├── programs/            # Arduino sketches (.ino) for Week 03
+│   │       └── lesson_images/
+├── images/                          # General photos and figures for the entire course
+└── README.md                        # Course overview (this file)
