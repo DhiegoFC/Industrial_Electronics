@@ -45,7 +45,7 @@ When inserting the LED on the breadboard:
 
 🖼️ Example Circuit (Tinkercad):
 <p align="center">
-  <img src="./lesson_images/arduino_led_button_control.png" alt="Button LED Circuit" width="65%">
+  <img src="../../lesson_images/arduino_led_button_control.png" alt="Button LED Circuit" width="65%">
 </p>
 
 ---
@@ -62,7 +62,7 @@ When inserting the LED on the breadboard:
 
 🖼️ Example Circuit (Tinkercad):
 <p align="center">
-  <img src="./lesson_images/arduino_potentiometer_led_control.png" alt="Potentiometer LED Circuit" width="65%">
+  <img src="../../lesson_images/arduino_potentiometer_led_control.png" alt="Potentiometer LED Circuit" width="65%">
 </p>
 
 ---

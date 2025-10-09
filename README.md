@@ -86,19 +86,29 @@ By the end of this course, students will be able to:
 ```plaintext
 ├── lessons/
 │   ├── week01/
-│   │   ├── sources/                 # Complete structure of Week 01 activities
-│   │   │   ├── README.md            # Description and instructions for Week 01 activities
-│   │   │   └── lesson_images/       # Circuit diagrams and figures
-│   │   └── week01_slides.pptx       # Presentation slides for the first session
+│   │   ├── sources/                     # Complete structure of Week 01 activities
+│   │   │   ├── lesson_images/           # Images and circuit diagrams used in Week 01
+│   │   │   └── hands-on/                # Practical activities of Week 01
+│   │   │       ├── activity_01/         # LED control using button and potentiometer
+│   │   │       │   ├── README.md        # Instructions and documentation of the activity
+│   │   │       │   └── programs/        # Arduino sketches (.ino) if needed
+│   │   │       └── (other activities if added later)
+│   │   └── week01_slides.pptx           # Presentation slides for the first session
 │   ├── week02/
 │   │   └── sources/
-│   │       ├── README.md            # Description and instructions for Week 02 activities
-│   │       ├── programs/            # Arduino sketches (.ino) for Week 02
-│   │       └── lesson_images/
+│   │       ├── lesson_images/           # Images and circuit diagrams used in Week 02
+│   │       └── hands-on/                # Practical activities of Week 02
+│   │           ├── activity_01/
+│   │           │   ├── README.md
+│   │           │   └── programs/
+│   │           └── (other activities if added later)
 │   ├── week03/
 │   │   └── sources/
-│   │       ├── README.md            # Description and instructions for Week 03 activities
-│   │       ├── programs/            # Arduino sketches (.ino) for Week 03
-│   │       └── lesson_images/
-├── images/                          # General photos and figures for the entire course
-└── README.md                        # Course overview (this file)
+│   │       ├── lesson_images/           # Images and circuit diagrams used in Week 03
+│   │       └── hands-on/                # Practical activities of Week 03
+│   │           ├── activity_01/
+│   │           │   ├── README.md
+│   │           │   └── programs/
+│   │           └── (other activities if added later)
+├── images/                              # General photos and figures for the entire course
+└── README.md                            # Course overview (this file)
