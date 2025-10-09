@@ -85,13 +85,3 @@ These exercises help students **understand the difference between digital and an
 
 ---
 
-## 📂 Directory Structure
-
-```plaintext
-week01/
-└── sources/
-    ├── README.md              # This file
-    ├── programs/              # (empty for now — no Arduino code required)
-    └── lesson_images/
-        ├── button_led_circuit.png
-        └── potentiometer_led_circuit.png
