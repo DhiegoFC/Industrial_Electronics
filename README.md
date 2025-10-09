@@ -40,13 +40,10 @@ By the end of this course, students will be able to:
 ### 📘 Week 01 – Introduction & Basic Circuits (No Programming)
 **Objective:** Familiarization with the Arduino kit and understanding of basic components through breadboard experiments.  
 
-- **Slides:** [<img src="images/pdf_logo1.png" alt="PDF" width="23" height="23" /> Microcontrollers in Control Systems](lessons/week_01/week_01_Microcontrollori_Elettronica_Industriale_Dhiego.pdf)
+- **Slides:** [<img src="images/pdf_logo1.png" alt="PDF" width="23" height="23" /> Microcontrollers in Control Systems](lessons/week_01/docs/week_01_Microcontrollori_Elettronica_Industriale_Dhiego.pdf)
 
 - **Hands-on:**  
-  - Presentation of the Arduino Zero to Hero Kit and components overview.  
-  - Breadboard assembly and testing procedures.  
-  - LED brightness control using a **potentiometer** (voltage divider).  
-  - “Glow in the Dark” circuit using **potentiometer + transistor (2N3904) + LDR**.  
+  - [LED Control using a Push Button and a Potentiometer](lessons/week_01/hands-on/week_01_activity_01/README.md) 
 
 ---
 
@@ -86,29 +83,30 @@ By the end of this course, students will be able to:
 ```plaintext
 ├── lessons/
 │   ├── week01/
-│   │   ├── sources/                     # Complete structure of Week 01 activities
-│   │   │   ├── lesson_images/           # Images and circuit diagrams used in Week 01
-│   │   │   └── hands-on/                # Practical activities of Week 01
-│   │   │       ├── activity_01/         # LED control using button and potentiometer
-│   │   │       │   ├── README.md        # Instructions and documentation of the activity
-│   │   │       │   └── programs/        # Arduino sketches (.ino) if needed
-│   │   │       └── (other activities if added later)
-│   │   └── week01_slides.pptx           # Presentation slides for the first session
+│   │   ├── lesson_images/                  # Images and circuit diagrams used in Week 01
+│   │   ├── hands-on/                       # Practical activities of Week 01
+│   │   │   ├── week_01_activity_01/        # LED control using button and potentiometer
+│   │   │   │   ├── README.md               # Instructions and documentation of the activity
+│   │   │   │   └── programs/               # Arduino sketches (.ino) if needed
+│   │   │   └── (other activities if added later)
+│   │   └── docs/                           # Supporting materials for Week 01
+│   │       └── week01_slides.pptx          # Presentation slides (only for Week 01)
 │   ├── week02/
-│   │   └── sources/
-│   │       ├── lesson_images/           # Images and circuit diagrams used in Week 02
-│   │       └── hands-on/                # Practical activities of Week 02
-│   │           ├── activity_01/
-│   │           │   ├── README.md
-│   │           │   └── programs/
-│   │           └── (other activities if added later)
+│   │   ├── lesson_images/                  # Images and circuit diagrams used in Week 02
+│   │   ├── hands-on/                       # Practical activities of Week 02
+│   │   │   ├── week_02_activity_01/
+│   │   │   │   ├── README.md
+│   │   │   │   └── programs/
+│   │   │   └── (other activities if added later)
+│   │   └── docs/                           # Supporting materials (if any)
 │   ├── week03/
-│   │   └── sources/
-│   │       ├── lesson_images/           # Images and circuit diagrams used in Week 03
-│   │       └── hands-on/                # Practical activities of Week 03
-│   │           ├── activity_01/
-│   │           │   ├── README.md
-│   │           │   └── programs/
-│   │           └── (other activities if added later)
-├── images/                              # General photos and figures for the entire course
-└── README.md                            # Course overview (this file)
+│   │   ├── lesson_images/                  # Images and circuit diagrams used in Week 03
+│   │   ├── hands-on/                       # Practical activities of Week 03
+│   │   │   ├── week_03_activity_01/
+│   │   │   │   ├── README.md
+│   │   │   │   └── programs/
+│   │   │   └── (other activities if added later)
+│   │   └── docs/                           # Supporting materials (if any)
+├── images/                                 # General photos and figures for the entire course
+└── README.md                               # Course overview (this file)
+
