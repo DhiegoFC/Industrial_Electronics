@@ -44,7 +44,7 @@ By the end of this course, students will be able to:
 
 - **Hands-on:**  
   - [LED Control using a Push Button and a Potentiometer](lessons/week_01/hands-on/week_01_activity_01/README.md) 
-
+  - [Potentiometer and NPN Transistor Control Circuits](/lessons/week_01/hands-on/week_01_activity_02/README.md)
 ---
 
 ### 🔧 Week 02 – Digital I/O & Signal Conditioning
