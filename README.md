@@ -110,3 +110,10 @@ By the end of this course, students will be able to:
 ├── images/                                 # General photos and figures for the entire course
 └── README.md                               # Course overview (this file)
 
+---
+
+## 🔗 References
+
+All hands-on activities are inspired by the  
+🎓 [*Arduino Hero to Zero* YouTube playlist by Sanjin Dedić](https://www.youtube.com/playlist?list=PL_92WMXSLe_86NTWf0nchm-EmQIwccEye),  
+which served as the foundational resource for the laboratory exercises.
