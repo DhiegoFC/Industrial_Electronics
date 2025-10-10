@@ -109,7 +109,7 @@ By the end of this course, students will be able to:
 │   │   └── docs/                           # Supporting materials (if any)
 ├── images/                                 # General photos and figures for the entire course
 └── README.md                               # Course overview (this file)
-
+```
 ---
 
 ## 🔗 References
