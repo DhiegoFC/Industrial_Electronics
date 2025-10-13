@@ -51,10 +51,8 @@ By the end of this course, students will be able to:
 **Objective:** Introduction to Arduino IDE, digital and analog interfacing, and time-based control.  
 
 - **Hands-on:**  
-  - Programming **LEDs and push buttons** for digital input/output.  
-  - Controlling LED blinking and timing (delay adjustments).  
-  - Reading analog input using **voltage divider** circuits (potentiometer or diode).  
-  - Exploring signal response and conditioning between sensor input and LED output.  
+  - [Digital Outputs and Inputs with Arduino UNO](lessons/week_02/hands-on/week_02_activity_01/README.md) 
+  - [Voltage Divider and Analog Input (PWM Dimmer with Arduino UNO)](/lessons/week_02/hands-on/week_02_activity_02/README.md)
 
 ---
 
