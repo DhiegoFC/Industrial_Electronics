@@ -107,7 +107,7 @@ This activity demonstrates how **input events** can directly influence **output 
 
 ### 💻 Arduino Sketch
 
-👉 [week_02_activity_01_controlling_leds_button.ino](../programs/week_02_activity_01_controlling_leds_button/)
+👉 [week_02_activity_01_controlling_leds_button.ino](../programs/week_02_activity_01_controlling_leds_button/week_02_activity_01_controlling_leds_button.ino)
 
 Upload the provided sketch to your Arduino UNO using the Arduino IDE.  
 The program detects the button state with `digitalRead()` and uses it to modify how the LEDs behave.
