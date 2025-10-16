@@ -27,7 +27,8 @@ Then click **Verify (✓)** to compile and **Upload (→)** to send the program 
 - Breadboard  
 - 4 LEDs (5 mm)  
 - 4 Resistors (220 Ω)  
-- 1 Push Button (momentary switch) *(used in Activity 2)*  
+- 1 Push Button (momentary switch) *(used in Activity 2)*
+- 1 Resistor (10K Ω) *(used in Activity 2)*  
 - Jumper wires (male-to-male)  
 - USB cable (A–B)  
 
@@ -51,20 +52,20 @@ This experiment demonstrates how the Arduino can manage multiple outputs using *
 ### 🖼️ Breadboard Layout
 
 <p align="center">
-  <img src="../../lesson_images/week02_activity01_leds_breadboard.png" alt="4 LEDs Breadboard Layout" width="70%">
+  <img src="../../lesson_images/week_02_activity_01_controlling_leds_breadboard.png" alt="4 LEDs Breadboard Layout" width="70%">
 </p>
 
 ### ⚙️ Circuit Diagram
 
 <p align="center">
-  <img src="../../lesson_images/week02_activity01_leds_diagram.png" alt="4 LEDs Circuit Diagram" width="70%">
+  <img src="../../lesson_images/week_02_activity_01_controlling_leds_diagram.png" alt="4 LEDs Circuit Diagram" width="70%">
 </p>
 
 ---
 
 ### 💻 Arduino Sketch
 
-👉 [week_02_activity_01_leds.ino](./programs/week_02_activity_01_leds.ino)
+👉 [week_02_activity_01_leds.ino](../programs/week_02_activity_01_controlling_leds/week_02_activity_01_controlling_leds.ino)
 
 Upload this sketch to your Arduino UNO.  
 The code generates random sequences of LED blinking using the `random()` function and `digitalWrite()`.
@@ -84,8 +85,7 @@ The code generates random sequences of LED blinking using the `random()` functio
 ### 📘 Description
 
 In this second activity, students will combine **digital inputs and outputs**.  
-All four LEDs will stay **on by default**, and when the **push button** is pressed, the LEDs will **blink randomly** according to a frequency defined in the program.  
-When the button is released, the LEDs return to their **steady ON state**.
+All four LEDs will stay **OFF**, and when the **push button** is pressed, the LEDs will remain **ON**, the LEDs return to their **steady OFF state** when the button is released.
 
 This activity demonstrates how **input events** can directly influence **output behavior** in real time — a core concept in control systems.
 
@@ -94,20 +94,20 @@ This activity demonstrates how **input events** can directly influence **output 
 ### 🖼️ Breadboard Layout
 
 <p align="center">
-  <img src="../../lesson_images/week02_activity02_button_breadboard.png" alt="Button Controlled LED Breadboard" width="70%">
+  <img src="../../lesson_images/week_02_activity_01_controlling_leds_button_breadboard.png" alt="Button Controlled LED Breadboard" width="70%">
 </p>
 
 ### ⚙️ Circuit Diagram
 
 <p align="center">
-  <img src="../../lesson_images/week02_activity02_button_diagram.png" alt="Button Controlled LED Diagram" width="70%">
+  <img src="../../lesson_images/week_02_activity_01_controlling_leds_button_diagram.png" alt="Button Controlled LED Diagram" width="70%">
 </p>
 
 ---
 
 ### 💻 Arduino Sketch
 
-👉 [week_02_activity_02_button.ino](./programs/week_02_activity_02_button.ino)
+👉 [week_02_activity_02_button.ino](../programs/week_02_activity_01_controlling_leds_button/)
 
 Upload the provided sketch to your Arduino UNO using the Arduino IDE.  
 The program detects the button state with `digitalRead()` and uses it to modify how the LEDs behave.
@@ -116,11 +116,10 @@ The program detects the button state with `digitalRead()` and uses it to modify 
 
 ### 🔍 Expected Behavior
 
-- **Without pressing the button:** All four LEDs remain **ON continuously**.  
-- **While pressing the button:** The LEDs start **blinking randomly**, according to the frequency set in the code.  
-- Releasing the button returns the circuit to the **steady ON** state.  
+- **Without pressing the button:** All four LEDs remain **OFF**.  
+- **While pressing the button:** All four LEDs remain **ON**.  
 
-This activity demonstrates how a simple input can control the system’s logic and dynamically change output behavior.
+This activity demonstrates how a simple input can control the system’s logic and dynamically change output behavior. The students must write the code in order to have another led bahavior while pressing the button. 
 
 ---
 
