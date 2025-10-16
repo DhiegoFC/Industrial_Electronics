@@ -52,13 +52,13 @@ This experiment demonstrates how the Arduino can manage multiple outputs using *
 ### 🖼️ Breadboard Layout
 
 <p align="center">
-  <img src="../../lesson_images/week_02_activity_01_controlling_leds_breadboard.png" alt="4 LEDs Breadboard Layout" width="70%">
+  <img src="../../lesson_images/week_02_activity_01_controlling_leds_breadboard.png" alt="4 LEDs Breadboard Layout" width="65%">
 </p>
 
 ### ⚙️ Circuit Diagram
 
 <p align="center">
-  <img src="../../lesson_images/week_02_activity_01_controlling_leds_diagram.png" alt="4 LEDs Circuit Diagram" width="70%">
+  <img src="../../lesson_images/week_02_activity_01_controlling_leds_diagram.png" alt="4 LEDs Circuit Diagram" width="80%">
 </p>
 
 ---
@@ -94,13 +94,13 @@ This activity demonstrates how **input events** can directly influence **output 
 ### 🖼️ Breadboard Layout
 
 <p align="center">
-  <img src="../../lesson_images/week_02_activity_01_controlling_leds_button_breadboard.png" alt="Button Controlled LED Breadboard" width="70%">
+  <img src="../../lesson_images/week_02_activity_01_controlling_leds_button_breadboard.png" alt="Button Controlled LED Breadboard" width="65%">
 </p>
 
 ### ⚙️ Circuit Diagram
 
 <p align="center">
-  <img src="../../lesson_images/week_02_activity_01_controlling_leds_button_diagram.png" alt="Button Controlled LED Diagram" width="70%">
+  <img src="../../lesson_images/week_02_activity_01_controlling_leds_button_diagram.png" alt="Button Controlled LED Diagram" width="80%">
 </p>
 
 ---
