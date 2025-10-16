@@ -39,7 +39,7 @@ Then click **Verify (✓)** to compile and **Upload (→)** to send the program 
 ### 📘 Description
 
 In this activity, students will program **four digital outputs** to control four LEDs connected to the Arduino UNO.  
-Each LED will **turn on and off randomly** according to the program logic.  
+Each LED will **turn on and off** according to the program logic.  
 This experiment demonstrates how the Arduino can manage multiple outputs using **digital pins**.
 
 🧠 Students are encouraged to experiment with:
@@ -74,7 +74,7 @@ The code generates random sequences of LED blinking using the `random()` functio
 
 ### 🔍 Expected Behavior
 
-- LEDs turn **on and off** in a random order.  
+- LEDs turn **on** and **off** in a specific order defined by the user.  
 - The sequence changes continuously, illustrating how **digital outputs** work independently.  
 - Modifying delay values or random ranges will change the blinking rhythm.
 
@@ -85,7 +85,7 @@ The code generates random sequences of LED blinking using the `random()` functio
 ### 📘 Description
 
 In this second activity, students will combine **digital inputs and outputs**.  
-All four LEDs will stay **OFF**, and when the **push button** is pressed, the LEDs will remain **ON**, the LEDs return to their **steady OFF state** when the button is released.
+All four LEDs will stay **OFF**, and while the **push button** is pressed, the LEDs will remain **ON**, the LEDs return to their **OFF state** when the button is released.
 
 This activity demonstrates how **input events** can directly influence **output behavior** in real time — a core concept in control systems.
 

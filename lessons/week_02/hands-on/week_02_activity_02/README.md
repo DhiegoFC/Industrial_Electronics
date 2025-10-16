@@ -34,7 +34,7 @@ Two experiments are proposed:
 - **220 Ω resistor** (for LED current limiting)  
 - **10 kΩ potentiometer** (for Activity 1)  
 - **1 fixed 10 kΩ resistor** (used in both activities as part of the voltage divider)  
-- **LDR (or photodiode)** (for Activity 2)  
+- **Photodiode (or LDR)** (for Activity 2)  
 - Jumper wires (male-to-male)  
 - USB A–B cable  
 
@@ -54,20 +54,20 @@ The LED acts as a **dimmer**, gradually changing intensity as the potentiometer 
 ### 🖼️ Breadboard Layout
 
 <p align="center">
-  <img src="../../lesson_images/week02_activity03_pot_breadboard.png" alt="Potentiometer Analog Input Breadboard" width="70%">
+  <img src="../../lesson_images/week_02_activity_02_voltage_divider_potentiometer_breadboard.png" alt="Potentiometer Voltage Divider Breadboard" width="70%">
 </p>
 
 ### ⚙️ Circuit Diagram
 
 <p align="center">
-  <img src="../../lesson_images/week02_activity03_pot_diagram.png" alt="Potentiometer Analog Input Diagram" width="70%">
+  <img src="../../lesson_images/week_02_activity_02_voltage_divider_potentiometer_diagram.png" alt="Potentiometer Voltage Divider Diagram" width="70%">
 </p>
 
 ---
 
 ### 💻 Arduino Sketch
 
-👉 **Open:** [week_02_activity_03_pot.ino](./programs/week_02_activity_03_pot.ino)
+👉 **Open:** [week_02_activity_02_voltage_divider_potentiometer.ino](../programs/week_02_activity_02_voltage_divider_potentiometer/week_02_activity_02_voltage_divider_potentiometer.ino)
 
 **What the code does:**
 - Reads the potentiometer voltage using `analogRead(A0)` (range 0–1023).  
@@ -84,12 +84,12 @@ The LED acts as a **dimmer**, gradually changing intensity as the potentiometer 
 
 ---
 
-## ⚙️ Activity 2 – LDR (Voltage Divider) → Light-Responsive LED Dimmer
+## ⚙️ Activity 2 – Photodiode (Voltage Divider) → Light-Responsive LED Dimmer
 
 ### 📘 Description
 
-In this activity, the potentiometer is replaced by an **LDR (or photodiode)** and a **10 kΩ resistor**, forming another **voltage divider**.  
-As light intensity changes, the resistance of the LDR varies, producing a corresponding voltage that the Arduino reads on **A0**.  
+In this activity, the potentiometer is replaced by an **Photodiode (or LDR)** and a **10 kΩ resistor**, forming another **voltage divider**.  
+As light intensity changes, the energy in the photodiode varies, producing a corresponding voltage that the Arduino reads on **A0**.  
 The code converts this analog value into a PWM signal to control the LED brightness.  
 Depending on the wiring or software logic, the LED can be **brighter in the dark** or **brighter in the light**.
 
@@ -138,7 +138,7 @@ analogWrite(ledPin, pwmValue);
 
 After completing these activities, students will:
 
-- Understand and build voltage divider circuits (potentiometer and LDR + resistor).  
+- Understand and build voltage divider circuits (potentiometer and photodiode + resistor).  
 - Observe how analog voltage levels are converted into PWM output brightness.  
 - Use analogRead() and analogWrite() to connect sensors and actuators.  
 - Explore how changes in light or voltage produce a smooth analog-to-digital control.
