@@ -101,13 +101,13 @@ Depending on the circuit wiring or the software logic, the LED can **brighter in
 ### 🖼️ Breadboard Layout
 
 <p align="center">
-  <img src="../../lesson_images/week02_activity04_ldr_breadboard.png" alt="LDR LED Breadboard" width="70%">
+  <img src="../../lesson_images/week_02_activity_02_voltage_divider_photodiode_breadboard.png" alt="Photodiode LED Breadboard" width="70%">
 </p>
 
 ### ⚙️ Circuit Diagram
 
 <p align="center">
-  <img src="../../lesson_images/week02_activity04_ldr_diagram.png" alt="LDR LED Circuit Diagram" width="70%">
+  <img src="../../lesson_images/week_02_activity_02_voltage_divider_photodiode_diagram.png" alt="Photodiode LED Circuit Diagram" width="70%">
 </p>
 
 ---
@@ -119,8 +119,6 @@ Depending on the circuit wiring or the software logic, the LED can **brighter in
 **What the code does:**
 - Reads the analog input from `A0` (LDR voltage).  
 - Converts the value to a PWM duty cycle for LED brightness.  
-
-```
 
 ### 🔍 Expected Behavior
 
