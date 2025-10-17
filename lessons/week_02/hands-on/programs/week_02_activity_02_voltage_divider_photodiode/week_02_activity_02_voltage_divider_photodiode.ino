@@ -1,39 +1,35 @@
 // Week 02 - Activity 04
-// Voltage Divider Light Sensor (Photodiode) → LED Dimmer (baseline difference)
-// Reads A0 (photodiode + 10k resistor divider), stores a baseline after 1s,
-// then drives LED on pin 3 with the absolute difference from that baseline.
+// Voltage Divider Light Sensor (Photodiode) → LED Dimmer (Inverse Mapping)
+// Photodiode + 10k resistor on A0 form a voltage divider.
+// LED on pin 3 gets brighter as the environment gets darker.
 
-const int sensorPin = A0;  // Photodiode divider output
-const int ledPin    = 3;   // LED on PWM pin 3
-
-int baseline = 0;          // Will store the initial (default) reading
+const int sensorPin = A0;   // Photodiode voltage divider output
+const int ledPin    = 3;    // PWM LED output
+int minSensorValue = 460;   // Min value measured (dark)
+int maxSensorValue = 990;   // Max value measured (bright)
 
 void setup() {
-  delay(1000);
-  pinMode(sensorPin, INPUT);
+  delay(1000);               // Wait for sensor stabilization
   pinMode(ledPin, OUTPUT);
-  Serial.begin(9600);
-  baseline = analogRead(sensorPin);
-  Serial.print("Baseline captured: ");
-  Serial.println(baseline);
+  Serial.begin(9600);        // Serial output frequency
 }
 
 void loop() {
-  // Read current sensor value (0..1023)
   int sensorValue = analogRead(sensorPin);
 
-  // Print raw sensor value to Serial Monitor
+  // Map light intensity to PWM.
+  // Use (0,255) for direct mapping → brighter light = brighter LED.
+  // Use (255,0) for inverted mapping → darker = brighter LED.
+  int pwmValue = map(sensorValue, minSensorValue, maxSensorValue, 0, 255);
+  pwmValue = constrain(pwmValue, 0, 255);
+
+  // Debug info
   Serial.print("Sensor: ");
-  Serial.println(sensorValue);
+  Serial.print(sensorValue);
+  Serial.print("  |  PWM: ");
+  Serial.println(pwmValue);
 
-  // Compute absolute difference from the baseline
-  int pwmValue = abs(sensorValue - baseline);
-
-  // Drive LED brightness with the difference
   analogWrite(ledPin, pwmValue);
-
-  // Small pause to make the Serial output easier to read
-  delay(15);
+  // You can change the loop delay in order to get faster sensor values
+  delay(250);
 }
-
-

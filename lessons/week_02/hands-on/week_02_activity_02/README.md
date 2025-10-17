@@ -89,11 +89,12 @@ The LED acts as a **dimmer**, gradually changing intensity as the potentiometer 
 ### 📘 Description
 
 In this activity, the potentiometer is replaced by an **Photodiode (or LDR)** and a **10 kΩ resistor**, forming another **voltage divider**.  
-As light intensity changes, the energy in the photodiode varies, producing a corresponding voltage that the Arduino reads on **A0**.  
-The code converts this analog value into a PWM signal to control the LED brightness.  
-Depending on the wiring or software logic, the LED can be **brighter in the dark** or **brighter in the light**.
 
-> 💡 Tip: Swapping the LDR and fixed resistor positions in the divider or inverting the logic in the code reverses the LED behavior.
+As the light intensity changes, the photodiode’s current changes accordingly. This varying current creates a proportional voltage across the 10 kΩ resistor, which the Arduino reads on A0.
+The code then converts this analog value into a PWM signal to control the LED brightness.
+Depending on the circuit wiring or the software logic, the LED can **brighter in the dark** or **brighter in the light**.
+
+> 💡 Tip: Swapping the photodiode and fixed resistor positions in the voltage divider, or inverting the mapping logic in the code, will reverse the LED behavior. **Warning**: the photodiode operates in reverse bias — its anode (longer lead, positive side)should go to GND, and its cathode (shorter lead, marked side) to +5 V.
 
 ---
 
@@ -113,24 +114,17 @@ Depending on the wiring or software logic, the LED can be **brighter in the dark
 
 ### 💻 Arduino Sketch
 
-👉 **Open:** [week_02_activity_04_ldr.ino](./programs/week_02_activity_04_ldr.ino)
+👉 **Open:** [week_02_activity_02_voltage_divider_photodiode.ino](../programs/week_02_activity_02_voltage_divider_photodiode/week_02_activity_02_voltage_divider_photodiode.ino)
 
 **What the code does:**
 - Reads the analog input from `A0` (LDR voltage).  
 - Converts the value to a PWM duty cycle for LED brightness.  
-- Optionally inverts the result if you want **the LED to brighten in the dark**:
 
-```cpp
-int sensorValue = analogRead(A0);
-int pwmValue = 255 - (sensorValue / 4); // Invert behavior if needed
-analogWrite(ledPin, pwmValue);
 ```
 
 ### 🔍 Expected Behavior
 
-- When the light on the LDR changes, the LED brightness changes continuously.
-- Covering the LDR with your hand makes the LED brighter (if logic is inverted).
-- Shining light on it reduces brightness.
+- When the light on the photodiodo changes, the LED brightness changes continuously.
 
 ---
 
