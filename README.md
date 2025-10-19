@@ -60,11 +60,8 @@ By the end of this course, students will be able to:
 **Objective:** Integration of sensors, actuators, and microcontroller programming in interactive applications.  
 
 - **Hands-on (to be selected and adapted):**  
-  - **Arduino Light Theremin** (LDR → buzzer sound).  
-  - **LM35 Temperature Sensor** with graph plotting in Arduino IDE.  
-  - **RGB LED Projects**: Maxwell Color Wheel and RGB Mixer with 3 potentiometers.  
-  - **Microphone Applications**: Clap Switch, Double Clap Switch, or Music Reactive Circuit.  
-  - Group experimentation and final demonstration.  
+  - [Temperature Measurement and Closed-Loop Control using LM35 Sensor](lessons/week_03/hands-on/week_03_activity_01/README.md) 
+  - [Sound Detection and LED Visualization using Microphone Sensor](/lessons/week_03/hands-on/week_03_activity_02/README.md)
 
 ---
 
