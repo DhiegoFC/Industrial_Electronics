@@ -56,7 +56,7 @@ Since the Tinkercad platform does not include the **Gravity Shield** or the **th
 
 ### Real Circuit (Physical Assembly)
 <p align="center">
-  <img src="../../lesson_images/week_03_activity_02_temperature_measurement_speaker.jpg" alt="Temperature Measurement with Speaker - REAL SETUP" width="70%">
+  <img src="../../lesson_images/week_03_activity_01_temperature_measurement_speaker.jpg" alt="Temperature Measurement with Speaker - REAL SETUP" width="70%">
 </p>
 
 > ⚙️ **Note on connections:**

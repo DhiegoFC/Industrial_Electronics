@@ -2,7 +2,7 @@
 
 ## 🎯 Objective
 In this activity, students will learn how to use a **microphone sound sensor** to detect and visualize sound intensity through LEDs.  
-The first experiment uses a **single LED** that turns ON with a loud sound (e.g., a clap), while the second displays **multiple LEDs** representing different sound levels.
+The first experiment uses a **single LED** that lights up when the sound passes a threshold (e.g., a clap), and the second uses **five LEDs** that illuminate progressively according to the sound intensity.
 
 ---
 
@@ -11,64 +11,87 @@ The first experiment uses a **single LED** that turns ON with a loud sound (e.g.
 - Gravity IO Expansion Shield  
 - Analog Microphone Sensor (Gravity: Analog Sound Sensor)  
 - Breadboard and jumper wires  
-- 5 LEDs (5 mm)  
-- 5 × 220 Ω resistors  
+- 1 × LED (5 mm) + 220 Ω resistor (for the first activity)  
+- 5 × LEDs (5 mm) + 5 × 220 Ω resistors (for the second activity)
+
+> ⚠️ **Note:**  
+> The **Gravity IO Expansion Shield** and **microphone module** used in this activity are not available in Tinkercad.  
+> Therefore, both circuits are shown using **real photos of the physical assemblies** built in the laboratory.  
+> The shield simplifies connections by providing easy access to **5V, GND, and signal pins** for each component.
 
 ---
 
 ## 👏 Sound Detection with Single LED
 
 ### Description
-The microphone module captures sound intensity and converts it into a variable voltage.  
-This voltage is read by the Arduino’s **analog input A0**.  
-When the sound amplitude exceeds a defined threshold, a **digital output (pin 3)** is activated, turning ON the LED.
+The microphone sensor converts sound intensity into a variable voltage that can be read on the **analog input A0**.  
+When this value exceeds a defined threshold (default = 100), the **LED on digital pin 3** lights up for **0.5 seconds**, then turns OFF automatically.  
+This demonstrates a simple **sound-triggered response** (such as detecting a clap).
 
-### Circuit Diagram and Breadboard
-![Microphone LED Breadboard](../lesson_images/mic_led_breadboard.jpg)  
-![Microphone LED Circuit Diagram](../lesson_images/mic_led_diagram.jpg)
+### Real Circuit (Physical Setup)
+<p align="center">
+  <img src="../../lesson_images/week_03_activity_02_sound_detection_1_led.jpg" alt="Sound Detection with Single LED" width="70%">
+</p>
+
+### Circuit Description
+- **A0** → connected to the **microphone output**  
+- **D3** → connected to the **LED** (through a 220 Ω resistor)  
+- **Red wire** → 5V  
+- **Black wire** → GND  
+- **Microphone output** provides an analog voltage proportional to sound amplitude  
 
 ### Expected Behavior
-- The LED remains OFF under normal conditions.  
-- When a **clap** or loud sound is detected, the LED **briefly turns ON**.  
-- The threshold can be adjusted in the code to make the sensor more or less sensitive.  
+- The LED remains **OFF** under normal ambient noise.  
+- When a **clap** or loud sound** is detected (value > 100), the **LED turns ON for 0.5 seconds**.  
+- The threshold can be adjusted in the code to change the sensitivity.
 
 ### Arduino Code
-👉 [View Code: Microphone Clap LED](./programs/mic_clap_led/mic_clap_led.ino)
+👉 [View Code: Sound Detection with Single LED](../programs/week_03_activity_02_soud_detection_1_led/week_03_activity_02_soud_detection_1_led.ino)
 
 ---
 
-## 🔊 Sound Level Visualization with Multiple LEDs
+## 🔊 Sound Intensity Visualization with Multiple LEDs
 
 ### Description
-In this setup, the same microphone sensor is used to drive **five LEDs** connected to pins **3, 5, 6, 9, and 10**.  
-Each LED represents a different sound intensity range, allowing visualization of volume changes in real time.  
-This behavior mimics a simple **audio level meter (VU meter)**.
+In this activity, the same microphone sensor connected to **A0** measures sound intensity.  
+Five LEDs connected to digital pins **3, 5, 6, 9, and 10** are activated progressively according to the amplitude of the sound signal.  
+Each LED corresponds to a specific intensity threshold:
+- **150** → LED 1 (pin 2)  
+- **250** → LED 2 (pin 3)  
+- **350** → LED 3 (pin 5)  
+- **450** → LED 4 (pin 7)  
+- **550** → LED 5 (pin 9)  
 
-### Circuit Diagram and Breadboard
-![Microphone 5 LEDs Breadboard](../lesson_images/mic_5leds_breadboard.jpg)  
-![Microphone 5 LEDs Circuit Diagram](../lesson_images/mic_5leds_diagram.jpg)
+Each LED has a **220 Ω resistor**, forming a basic **sound intensity visualizer** (VU meter).
+
+### Real Circuit (Physical Setup)
+<p align="center">
+  <img src="../../lesson_images/week_03_activity_02_sound_detection_5_LEDs.jpg" alt="Sound Detection with Five LEDs" width="70%">
+</p> 
+
+
+### Circuit Description
+- **A0** → microphone output  
+- **D3, D5, D6, D9, D10** → LEDs (each with 220 Ω resistor)  
+- **Red wires** → 5V  
+- **Black wires** → GND  
+- The **Gravity Shield** provides organized power and ground lines for all devices.  
 
 ### Expected Behavior
-- When you **speak softly**, only the **first LED** lights up.  
+- When you **speak softly**, only **one LED** lights up.  
 - At **medium sound levels**, **2–3 LEDs** turn ON.  
-- With a **loud sound**, **4–5 LEDs** illuminate simultaneously.  
-- The LEDs update continuously based on microphone input.
+- With a **loud sound or clap**, **4–5 LEDs** illuminate simultaneously.  
+- The number of lit LEDs changes dynamically with sound intensity.
 
 ### Arduino Code
-👉 [View Code: Microphone Sound Level LEDs](./programs/mic_sound_level_leds/mic_sound_level_leds.ino)
+👉 [View Code: Sound Detection with 5 LEDs](../programs/week_03_activity_02_sound_detection_5_leds/week_03_activity_02_sound_detection_5_leds.ino)
 
 ---
 
 ## 🧠 Learning Outcome
 After completing this activity, students will:
-- Understand how an **analog microphone sensor** converts sound waves into voltage signals.  
-- Set and tune **threshold values** for sound-based triggering.  
-- Implement a **basic sound intensity visualization** using PWM and multiple outputs.  
-- Relate sound energy variations to **real-time digital responses** in control systems.
-
----
-
-## 🙏 Acknowledgment
-These hands-on exercises are inspired by the  
-🎥 [Arduino Hero to Zero YouTube playlist by Sanjin Dedić](https://www.youtube.com/playlist?list=PL_92WMXSLe_86NTWf0nchm-EmQIwccEye),  
-which serves as the foundation for practical experimentation in this laboratory module.
+- Understand how an **analog microphone sensor** converts sound into voltage variations.  
+- Implement **sound-triggered logic** using a single threshold.  
+- Develop a **multi-level visual indicator** (VU meter) to represent sound intensity.  
+- Learn how the **Gravity Shield** simplifies circuit organization and power distribution.  
+- Observe the relationship between **analog input** and **digital**
