@@ -25,8 +25,15 @@ This voltage is read by the Arduino’s analog input (A0), converted into Celsiu
 An LED turns ON when the temperature rises above a set threshold, helping students visualize the relationship between analog measurement and control output.
 
 ### Circuit Diagram and Breadboard
-![LM35 Breadboard Setup](../../lesson_images/week_03_activity_01_temperature_measurement_led_breadboard.png)  
-![LM35 Circuit Diagram](../../lesson_images/week_03_activity_01_temperature_measurement_led_diagram.png)
+<p align="center">
+  <img src="../../lesson_images/week_03_activity_01_temperature_measurement_led_breadboard.png" alt="Temperature Measurement with LED Breadboard" width="70%">
+</p>
+
+### ⚙️ Circuit Diagram
+
+<p align="center">
+  <img src="../../lesson_images/week_03_activity_01_temperature_measurement_led_diagram.png" alt="Temperature Measurement with LED Diagram" width="70%">
+</p>
 
 ### Expected Behavior
 - The Serial Plotter displays a live temperature curve.  
@@ -48,7 +55,9 @@ This shield simplifies wiring and provides **dedicated power lines (5V and GND)*
 Since the Tinkercad platform does not include the **Gravity Shield** or the **three-wire speaker module** used in the Zero to Hero kit, the figure below shows the **real physical circuit** assembled and tested in the laboratory.
 
 ### Real Circuit (Physical Assembly)
-![LM35 Speaker Real Setup](../../lesson_images/week_03_activity_02_temperature_measurement_speaker.jpg)
+<p align="center">
+  <img src="../../lesson_images/week_03_activity_02_temperature_measurement_speaker.jpg" alt="Temperature Measurement with Speaker - REAL SETUP" width="70%">
+</p>
 
 > ⚙️ **Note on connections:**
 > - **A0** → input for the **LM35 temperature sensor**  
