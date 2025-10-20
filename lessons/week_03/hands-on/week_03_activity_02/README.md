@@ -66,7 +66,7 @@ Each LED has a **220 Ω resistor**, forming a basic **sound intensity visualizer
 
 ### Real Circuit (Physical Setup)
 <p align="center">
-  <img src="../../lesson_images/week_03_activity_02_sound_detection_5_LEDs.jpg" alt="Sound Detection with Five LEDs" width="70%">
+  <img src="../../lesson_images/week_03_activity_02_sound_detection_5_leds.jpg" alt="Sound Detection with Five LEDs" width="70%">
 </p> 
 
 
@@ -95,3 +95,4 @@ After completing this activity, students will:
 - Develop a **multi-level visual indicator** (VU meter) to represent sound intensity.  
 - Learn how the **Gravity Shield** simplifies circuit organization and power distribution.  
 - Observe the relationship between **analog input** and **digital**
+
