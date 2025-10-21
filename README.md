@@ -2,8 +2,6 @@
 
 # University of Bergamo (UNIBG)
 
-## Department of Engineering and Applied Sciences
-
 ### Industrial Electronics – Microcontrollers and Control Applications with Arduino
 
 ---
