@@ -72,7 +72,7 @@ Each LED has a **220 Ω resistor**, forming a basic **sound intensity visualizer
 
 ### Circuit Description
 - **A0** → microphone output  
-- **D3, D5, D6, D9, D10** → LEDs (each with 220 Ω resistor)  
+- **D2, D3, D5, D7, D9** → LEDs (each with 220 Ω resistor)  
 - **Red wires** → 5V  
 - **Black wires** → GND  
 - The **Gravity Shield** provides organized power and ground lines for all devices.  
