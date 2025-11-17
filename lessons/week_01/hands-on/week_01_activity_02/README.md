@@ -101,6 +101,7 @@ The potentiometer is used to **adjust sensitivity**, defining the light level at
 - In bright environments, the LED stays **off**.  
 - When the light level drops, the LED **turns on gradually**, controlled by the transistor and LDR.  
 - Adjusting the potentiometer changes the **light sensitivity threshold** for activation.  
+- If your a room with insufficient luminosity, try to use your cellphone light above LDR sensor.
 
 ---
 

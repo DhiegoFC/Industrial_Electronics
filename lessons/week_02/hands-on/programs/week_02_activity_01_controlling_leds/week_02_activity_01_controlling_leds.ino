@@ -24,7 +24,7 @@ void loop() {
   digitalWrite(led3, HIGH);
   delay(1000);
   digitalWrite(led4, HIGH);
-  //delay(1000);
+  delay(1000);
 
   // Turn all LEDs OFF
   digitalWrite(led1, LOW);

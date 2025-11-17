@@ -81,6 +81,7 @@ The LED acts as a **dimmer**, gradually changing intensity as the potentiometer 
 - Rotating the potentiometer changes the **voltage on A0**, and the LED brightness varies **smoothly**.  
 - When the potentiometer is at one end, the LED is **off**; at the opposite end, it is **fully on**.  
 - The student observes how the **voltage divider** produces a proportional voltage that drives the **PWM output**.
+- What does happen if change the **10k resistor** to a different resistor value? Is it necessary to recalibrate **PWM output** function?
 
 ---
 
@@ -117,8 +118,9 @@ Depending on the circuit wiring or the software logic, the LED can **brighter in
 👉 **Open:** [week_02_activity_02_voltage_divider_photodiode.ino](../programs/week_02_activity_02_voltage_divider_photodiode/week_02_activity_02_voltage_divider_photodiode.ino)
 
 **What the code does:**
-- Reads the analog input from `A0` (LDR voltage).  
-- Converts the value to a PWM duty cycle for LED brightness.  
+- Reads the analog input from photodiode voltage from `A0` (range 0–1023).  
+- Converts the value to a PWM scale (range 0–255) by means of a **map fuction** using `map(sensorValue, minSensorValue, maxSensorValue, 0, 255)`.
+- Writes the scaled value to the LED pin `03` using `analogWrite(ledPin, value)`
 
 ### 🔍 Expected Behavior
 
