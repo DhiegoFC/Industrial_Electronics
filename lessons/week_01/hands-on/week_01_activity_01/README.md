@@ -43,9 +43,17 @@ When inserting the LED on the breadboard:
 5. Connect the LED cathode (through the resistor) to **GND**.  
 6. When powered, pressing the button will complete the circuit and light up the LED.
 
-🖼️ Example Circuit (Tinkercad):
+---
+
+### 🖼️ Breadboard Layout
 <p align="center">
   <img src="../../lesson_images/arduino_led_button_control.png" alt="Button LED Circuit" width="65%">
+</p>
+
+### ⚙️ Circuit Diagram
+
+<p align="center">
+  <img src="../../lesson_images/diagram_arduino_led_button_control.png" alt="Button LED Circuit Diagram" width="65%">
 </p>
 
 ---
@@ -60,9 +68,19 @@ When inserting the LED on the breadboard:
    - **Middle pin (wiper) → LED through 220 Ω resistor**
 4. Turning the potentiometer will vary the voltage at the LED, gradually changing its brightness.
 
-🖼️ Example Circuit (Tinkercad):
+---
+
+### 🖼️ Breadboard Layout
 <p align="center">
   <img src="../../lesson_images/arduino_potentiometer_led_control.png" alt="Potentiometer LED Circuit" width="65%">
+</p>
+
+---
+
+### ⚙️ Circuit Diagram
+
+<p align="center">
+  <img src="../../lesson_images/diagram_arduino_potentiometer_led_control.png" alt="Potentiometer LED Circuit Circuit Diagram" width="65%">
 </p>
 
 ---
